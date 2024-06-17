@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="Form_validation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="" oninput="validateform()">
+        <span id="name_error"></span>
+
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father_name" name="" oninput="validateform()">
+        <span id="father_name_error"></span>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="" oninput="validateform()">
+        <span id="mobile_error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="" oninput="validateform()">
+        <span id="email_error"></span>
+
+        <label for="email">Passwoed:</label>
+        <input type="password" id="password" name="" oninput="validateform()">
+        <span id="password_error"></span>
+        <label for="email">Confirm Passwoed:</label>
+        <input type="password" id="confirm_password" name="" oninput="validateform()">
+        <span id="confirm_password_error"></span>
+        <button onclick="validateform()">Submit</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Form_Validation.js"></script>
+
+
+</body>
+</html>
